@@ -39,7 +39,8 @@
     NSLog(@"total count: %f", [Nucleo NucleoTotal]);
     NSLog(@"total time: %f ms", end - start);
     
-    NSLog(@"Hello GitHub Desktop~");
+    NSLog(@"Hello GitHub Desktop~ from Master");
+    NSLog(@"Hello GitHub Desktop~ from git-test-branch");
     
     return YES;
 }
