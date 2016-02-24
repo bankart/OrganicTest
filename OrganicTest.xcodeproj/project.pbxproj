@@ -7,25 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350093E21590316700065223 /* RNA.m in Sources */ = {isa = PBXBuildFile; fileRef = 350093E11590316700065223 /* RNA.m */; };
+		350093E815903A3000065223 /* NSArray+Nucleo.m in Sources */ = {isa = PBXBuildFile; fileRef = 350093E715903A3000065223 /* NSArray+Nucleo.m */; };
+		350093EB1590CB7500065223 /* Ribosome.m in Sources */ = {isa = PBXBuildFile; fileRef = 350093EA1590CB7500065223 /* Ribosome.m */; };
+		35A6A1DE158A368900CE6E0E /* Enzyme.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6A1DD158A368900CE6E0E /* Enzyme.m */; };
+		35A6A1E1158A379700CE6E0E /* Nucleotide.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6A1E0158A379700CE6E0E /* Nucleotide.m */; };
+		35A6A1E8158A3F4D00CE6E0E /* Phosphate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A6A1E7158A3F4D00CE6E0E /* Phosphate.m */; };
+		35A78DF0158C2328000F18B5 /* StructFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A78DEF158C2328000F18B5 /* StructFactory.m */; };
 		35A97BB9158A0D8E007AE05C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A97BB8158A0D8E007AE05C /* UIKit.framework */; };
 		35A97BBB158A0D8E007AE05C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A97BBA158A0D8E007AE05C /* Foundation.framework */; };
 		35A97BBD158A0D8E007AE05C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A97BBC158A0D8E007AE05C /* CoreGraphics.framework */; };
 		35A97BC3158A0D8E007AE05C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35A97BC1158A0D8E007AE05C /* InfoPlist.strings */; };
 		35A97BC5158A0D8E007AE05C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A97BC4158A0D8E007AE05C /* main.m */; };
 		35A97BC9158A0D8E007AE05C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A97BC8158A0D8E007AE05C /* AppDelegate.m */; };
+		35A97BD3158A0E17007AE05C /* Nucleo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A97BD2158A0E17007AE05C /* Nucleo.m */; };
+		35FC1AC4158F7ACB00F03FC8 /* ProteinKinase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC1AC3158F7ACB00F03FC8 /* ProteinKinase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350093E01590316700065223 /* RNA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNA.h; sourceTree = "<group>"; };
+		350093E11590316700065223 /* RNA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNA.m; sourceTree = "<group>"; };
+		350093E615903A3000065223 /* NSArray+Nucleo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Nucleo.h"; sourceTree = "<group>"; };
+		350093E715903A3000065223 /* NSArray+Nucleo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Nucleo.m"; sourceTree = "<group>"; };
+		350093E91590CB7500065223 /* Ribosome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ribosome.h; sourceTree = "<group>"; };
+		350093EA1590CB7500065223 /* Ribosome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ribosome.m; sourceTree = "<group>"; };
+		35A6A1D9158A35E400CE6E0E /* StringConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringConst.h; sourceTree = "<group>"; };
+		35A6A1DA158A35F400CE6E0E /* NumberConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberConst.h; sourceTree = "<group>"; };
+		35A6A1DB158A35FF00CE6E0E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		35A6A1DC158A368900CE6E0E /* Enzyme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enzyme.h; sourceTree = "<group>"; };
+		35A6A1DD158A368900CE6E0E /* Enzyme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enzyme.m; sourceTree = "<group>"; };
+		35A6A1DF158A379700CE6E0E /* Nucleotide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nucleotide.h; sourceTree = "<group>"; };
+		35A6A1E0158A379700CE6E0E /* Nucleotide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nucleotide.m; sourceTree = "<group>"; };
+		35A6A1E3158A380B00CE6E0E /* BaseNucleoDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNucleoDelegate.h; sourceTree = "<group>"; };
+		35A6A1E4158A3E2B00CE6E0E /* MutationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MutationDelegate.h; sourceTree = "<group>"; };
+		35A6A1E5158A3E3E00CE6E0E /* ChainDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainDelegate.h; sourceTree = "<group>"; };
+		35A6A1E6158A3F4D00CE6E0E /* Phosphate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phosphate.h; sourceTree = "<group>"; };
+		35A6A1E7158A3F4D00CE6E0E /* Phosphate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Phosphate.m; sourceTree = "<group>"; };
+		35A78DEE158C2328000F18B5 /* StructFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructFactory.h; sourceTree = "<group>"; };
+		35A78DEF158C2328000F18B5 /* StructFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructFactory.m; sourceTree = "<group>"; };
 		35A97BB4158A0D8E007AE05C /* OrganicTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrganicTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A97BB8158A0D8E007AE05C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		35A97BBA158A0D8E007AE05C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		35A97BBC158A0D8E007AE05C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		35A97BC0158A0D8E007AE05C /* OrganicTest-Info.plist */ = {isa = PBXFileReference; path = "OrganicTest-Info.plist"; sourceTree = "<group>"; };
+		35A97BC0158A0D8E007AE05C /* OrganicTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganicTest-Info.plist"; sourceTree = "<group>"; };
 		35A97BC2158A0D8E007AE05C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35A97BC4158A0D8E007AE05C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		35A97BC6158A0D8E007AE05C /* OrganicTest-Prefix.pch */ = {isa = PBXFileReference; path = "OrganicTest-Prefix.pch"; sourceTree = "<group>"; };
-		35A97BC7158A0D8E007AE05C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		35A97BC6158A0D8E007AE05C /* OrganicTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrganicTest-Prefix.pch"; sourceTree = "<group>"; };
+		35A97BC7158A0D8E007AE05C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35A97BC8158A0D8E007AE05C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35A97BD1158A0E17007AE05C /* Nucleo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nucleo.h; sourceTree = "<group>"; };
+		35A97BD2158A0E17007AE05C /* Nucleo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nucleo.m; sourceTree = "<group>"; };
+		35B27E12158B62AC002133C8 /* StructConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StructConst.h; sourceTree = "<group>"; };
+		35FC1AC2158F7ACB00F03FC8 /* ProteinKinase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProteinKinase.h; sourceTree = "<group>"; };
+		35FC1AC3158F7ACB00F03FC8 /* ProteinKinase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProteinKinase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +76,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350093E4159035B300065223 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				35A78DEE158C2328000F18B5 /* StructFactory.h */,
+				35A78DEF158C2328000F18B5 /* StructFactory.m */,
+				350093E91590CB7500065223 /* Ribosome.h */,
+				350093EA1590CB7500065223 /* Ribosome.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		350093E5159039F400065223 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				350093E615903A3000065223 /* NSArray+Nucleo.h */,
+				350093E715903A3000065223 /* NSArray+Nucleo.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		35A6A1D4158A358A00CE6E0E /* const */ = {
+			isa = PBXGroup;
+			children = (
+				35A6A1D9158A35E400CE6E0E /* StringConst.h */,
+				35A6A1DA158A35F400CE6E0E /* NumberConst.h */,
+				35A6A1DB158A35FF00CE6E0E /* Constants.h */,
+				35B27E12158B62AC002133C8 /* StructConst.h */,
+			);
+			name = const;
+			sourceTree = "<group>";
+		};
+		35A6A1E2158A37A900CE6E0E /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				35A6A1E3158A380B00CE6E0E /* BaseNucleoDelegate.h */,
+				35A6A1E4158A3E2B00CE6E0E /* MutationDelegate.h */,
+				35A6A1E5158A3E3E00CE6E0E /* ChainDelegate.h */,
+			);
+			name = protocol;
+			sourceTree = "<group>";
+		};
 		35A97BA9158A0D8D007AE05C = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +147,11 @@
 		35A97BBE158A0D8E007AE05C /* OrganicTest */ = {
 			isa = PBXGroup;
 			children = (
+				350093E5159039F400065223 /* category */,
+				350093E4159035B300065223 /* util */,
+				35A6A1E2158A37A900CE6E0E /* protocol */,
+				35A6A1D4158A358A00CE6E0E /* const */,
+				35A97BCF158A0DA3007AE05C /* core */,
 				35A97BC7158A0D8E007AE05C /* AppDelegate.h */,
 				35A97BC8158A0D8E007AE05C /* AppDelegate.m */,
 				35A97BBF158A0D8E007AE05C /* Supporting Files */,
@@ -88,6 +168,33 @@
 				35A97BC6158A0D8E007AE05C /* OrganicTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35A97BCF158A0DA3007AE05C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				35A97BD0158A0DAC007AE05C /* nucleo */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		35A97BD0158A0DAC007AE05C /* nucleo */ = {
+			isa = PBXGroup;
+			children = (
+				35A97BD1158A0E17007AE05C /* Nucleo.h */,
+				35A97BD2158A0E17007AE05C /* Nucleo.m */,
+				35A6A1DC158A368900CE6E0E /* Enzyme.h */,
+				35A6A1DD158A368900CE6E0E /* Enzyme.m */,
+				35A6A1DF158A379700CE6E0E /* Nucleotide.h */,
+				35A6A1E0158A379700CE6E0E /* Nucleotide.m */,
+				35A6A1E6158A3F4D00CE6E0E /* Phosphate.h */,
+				35A6A1E7158A3F4D00CE6E0E /* Phosphate.m */,
+				35FC1AC2158F7ACB00F03FC8 /* ProteinKinase.h */,
+				35FC1AC3158F7ACB00F03FC8 /* ProteinKinase.m */,
+				350093E01590316700065223 /* RNA.h */,
+				350093E11590316700065223 /* RNA.m */,
+			);
+			name = nucleo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +260,15 @@
 			files = (
 				35A97BC5158A0D8E007AE05C /* main.m in Sources */,
 				35A97BC9158A0D8E007AE05C /* AppDelegate.m in Sources */,
+				35A97BD3158A0E17007AE05C /* Nucleo.m in Sources */,
+				35A6A1DE158A368900CE6E0E /* Enzyme.m in Sources */,
+				35A6A1E1158A379700CE6E0E /* Nucleotide.m in Sources */,
+				35A6A1E8158A3F4D00CE6E0E /* Phosphate.m in Sources */,
+				35A78DF0158C2328000F18B5 /* StructFactory.m in Sources */,
+				35FC1AC4158F7ACB00F03FC8 /* ProteinKinase.m in Sources */,
+				350093E21590316700065223 /* RNA.m in Sources */,
+				350093E815903A3000065223 /* NSArray+Nucleo.m in Sources */,
+				350093EB1590CB7500065223 /* Ribosome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +372,7 @@
 				35A97BCE158A0D8E007AE05C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

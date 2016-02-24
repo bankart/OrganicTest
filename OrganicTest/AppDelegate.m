@@ -8,6 +8,13 @@
 
 #import "AppDelegate.h"
 
+#import "Constants.h"
+#import "Phosphate.h"
+#import "ChainDelegate.h"
+#import "Nucleotide.h"
+#import "Nucleo.h"
+
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -18,7 +25,63 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"int max: %i", INT_MAX);
+    
+    NSTimeInterval start = [[NSDate date] timeIntervalSince1970];
+    
+    int capacity = 5, i = 0;
+    for (i=0; i<capacity; i++) {
+        [self createPhosphate];
+    }
+    
+    NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+    NSLog(@"total count: %f", [Nucleo NucleoTotal]);
+    NSLog(@"total time: %f ms", end - start);
+    
     return YES;
+}
+
+- (void)createPhosphate
+{
+    NSTimeInterval start = [[NSDate date] timeIntervalSince1970];
+    
+    int capacity = 10, i = 0;
+    
+    @try {
+        
+        NSMutableArray *chainDelegateTemp = [NSMutableArray arrayWithCapacity:capacity];
+        Nucleotide *nucleoside = nil;
+        for (i=0; i<capacity; i++) {
+            nucleoside = [[Nucleotide alloc] init];
+            [chainDelegateTemp addObject:nucleoside];
+        }
+        
+        NSArray *nucleosideTypeTemp = [NSArray arrayWithObjects:[NSNumber numberWithInt:kNucleoside_Mono], [NSNumber numberWithInt:kNucleoside_Di], [NSNumber numberWithInt:kNucleoside_Tri], nil];
+        
+        id<ChainDelegate>chain = NULL;
+        for (i=0; i<chainDelegateTemp.count; i++) {
+            chain = [chainDelegateTemp objectAtIndex:i];
+            [chain executePhosphateChain:[(NSNumber *)[nucleosideTypeTemp objectAtIndex:arc4random()%nucleosideTypeTemp.count] intValue]];
+        }
+        
+        for (i=0; i<capacity; i++) {
+            nucleoside = [chainDelegateTemp objectAtIndex:i];
+            NSLog(@"nucleoside: %@", [nucleoside.nucleo nucleoInfo]);
+        }
+        
+    }
+    @catch (NSException *exception) {
+        NSLog(@"total count: %f", [Nucleo NucleoTotal]);
+        NSLog(@"error: %@", exception);
+    }
+    @finally {
+        NSTimeInterval end = [[NSDate date] timeIntervalSince1970];
+        NSLog(@"total time: %f ms", end - start);
+        
+    }
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
